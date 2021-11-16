@@ -100,6 +100,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		464635D627432E4500EDD92F /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B8397814261085090073C694 /* Wordpress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wordpress.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B839781B2610850A0073C694 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B839781E2610850A0073C694 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -155,7 +156,6 @@
 		B83978CA261088750073C694 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B83978CC261088750073C694 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B83978D826108F510073C694 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		B83978DC26108F630073C694 /* tr-TR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "tr-TR"; path = "tr-TR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		B83978DD26108FA50073C694 /* URLImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLImageView.swift; sourceTree = "<group>"; };
 		B863789726388B6A00A0D84A /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		B8CD2A9D264429A50053EDCA /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
@@ -417,7 +417,7 @@
 			knownRegions = (
 				en,
 				Base,
-				"tr-TR",
+				es,
 			);
 			mainGroup = B839780B261085090073C694;
 			packageReferences = (
@@ -541,7 +541,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				B83978D826108F510073C694 /* en */,
-				B83978DC26108F630073C694 /* tr-TR */,
+				464635D627432E4500EDD92F /* es */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
