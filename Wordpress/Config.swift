@@ -9,8 +9,8 @@ import Foundation
 import SwiftUI
 
 //Your wordpress address
-var WORDPRESS_URL = "https://asilarslan.com/"
-var HEADLINE_CATEGORY_ID = 36 // Your Categories -> www.YOUR_WORDPRESS_SITE/wp-json/wp/v2/categories
+var WORDPRESS_URL = "https://agro.gorila.com.py/"
+var HEADLINE_CATEGORY_ID = 17 // Your Categories -> www.YOUR_WORDPRESS_SITE/wp-json/wp/v2/categories
 
 ///Onboard Data
 var ONBOARD_DATA: [Onboard] = [
@@ -27,10 +27,10 @@ var IN_APP_PRODUCTS = [
 ]
 
 ///Category Tabs Visibilty
-var IS_CATEGORIES_VISIBLE = true
+var IS_CATEGORIES_VISIBLE = false
 
 ///Headline Visibilty
-var IS_HEADLINE_VISIBLE = true
+var IS_HEADLINE_VISIBLE = false
 
 ///Headline Type
 var HEADLINE_TYPE = HeadlineEnum.multiple
@@ -39,15 +39,15 @@ var EMPTY_IMAGE_URL = "https://seferihisar.com/wp-content/themes/shnews/assets/i
 var DATE_FORMAT = "dd MMM yyyy"
 
 //Admob Interstital ad id
-var INTERSTITIAL_AD_ID: String = "ca-app-pub-8915706349520340/3989286675"
-var TEST_DEVICE: String = "b317b731f5490205b1f60b638837ea16"
+//var INTERSTITIAL_AD_ID: String = "ca-app-pub-8915706349520340/3989286675"
+//var TEST_DEVICE: String = "b317b731f5490205b1f60b638837ea16"
 
 ///Settings
-var DEVELOPER = "Asil ARSLAN"
+var DEVELOPER = "Gorillas"
 var COMPABILITY = "iOS 14"
-var WEBSITE_LABEL = "Blog"
-var WEBSITE_LINK = "asilarslan.com"
-var VERSION = "1.0.0"
+var WEBSITE_LABEL = "CAPECO App"
+var WEBSITE_LINK = "gorillas.com.py"
+var VERSION = "2.0.0"
 
 enum HeadlineEnum {
     case single, multiple

@@ -20,19 +20,19 @@ final class Interstitial:NSObject, GADFullScreenContentDelegate{
     }
     
     func LoadInterstitial(){
-        let request = GADRequest()
-        GADInterstitialAd.load(withAdUnitID:INTERSTITIAL_AD_ID,
-                                    request: request,
-                          completionHandler: { [self] ad, error in
-                            if let error = error {
-                              print("Failed to load interstitial ad with error: \(error.localizedDescription)")
-                              return
-                            }
-                            interstitial = ad
-                            interstitial?.fullScreenContentDelegate = self
-                          }
-        )
-        
+//        let request = GADRequest()
+//        GADInterstitialAd.load(withAdUnitID:INTERSTITIAL_AD_ID,
+//                                    request: request,
+//                          completionHandler: { [self] ad, error in
+//                            if let error = error {
+//                              print("Failed to load interstitial ad with error: \(error.localizedDescription)")
+//                              return
+//                            }
+//                            interstitial = ad
+//                            interstitial?.fullScreenContentDelegate = self
+//                          }
+//        )
+//
 //        GADMobileAds.sharedInstance().requestConfiguration.testDeviceIdentifiers = [TEST_DEVICE];
     }
     
