@@ -24,11 +24,9 @@ struct CategoryView: View {
                 ToolbarItem(placement: .navigationBarLeading) {
                     Button(action: {
                         withAnimation{
-                            
                             self.showMenu.toggle()
                         }
                     }, label: {
-                        
                         Image(systemName: self.showMenu ? "xmark" : "line.horizontal.3")
                             .font(.title)
                             .foregroundColor(.black)

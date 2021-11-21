@@ -741,7 +741,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 2;
-				PRODUCT_BUNDLE_IDENTIFIER = com.gorillasatwork.CAPECOWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gorillasatwork.CAPECO.Widget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -763,7 +763,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 2;
-				PRODUCT_BUNDLE_IDENTIFIER = com.gorillasatwork.CAPECOWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gorillasatwork.CAPECO.Widget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;

@@ -13,7 +13,7 @@ struct NewsHeadlineView: View {
     let post: Post
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 16.0) {
+        VStack(alignment: .leading, spacing: 8.0) {
             if post._embedded?.featuredmedia != nil{
                 GeometryReader { geometry in
                     KFImage(source: .network(
@@ -41,7 +41,7 @@ struct NewsHeadlineView: View {
             })
             
         }
-        .padding(8.0)
+        .padding(0)
     }
 }
 

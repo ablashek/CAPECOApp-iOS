@@ -44,7 +44,7 @@ struct NewsRowView: View {
             
             Spacer()
         }
-        .padding(8.0)
+        .padding(2.0)
     }
     
     func verifyUrl (urlString: String?) -> Bool {

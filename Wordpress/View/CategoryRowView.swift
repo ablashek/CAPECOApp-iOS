@@ -16,19 +16,19 @@ struct CategoryRowView: View {
             HStack {
                 Text(category.name)
                     .fontWeight(.bold)
-                    .padding(20)
+                    .padding(10)
                 
                 Spacer()
                 
                 Text("\(category.count)")
                     .fontWeight(.bold)
                     .frame(width: 50)
-                    .padding(12)
-                    .background(Color(.tertiarySystemBackground).clipShape(RoundedRectangle(cornerRadius: 8, style: .continuous)))
+                    .padding(2)
+                    .background(Color(.secondarySystemBackground).clipShape(RoundedRectangle(cornerRadius: 8, style: .continuous)))
                     .padding(8)
             }
-            .background(Color(.secondarySystemBackground).clipShape(RoundedRectangle(cornerRadius: 8, style: .continuous)))
-            .padding(5)
+//            .background(Color(.secondarySystemBackground).clipShape(RoundedRectangle(cornerRadius: 8, style: .continuous)))
+//            .padding(5)
         }
     }
 }

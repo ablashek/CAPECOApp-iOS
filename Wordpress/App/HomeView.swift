@@ -16,7 +16,7 @@ struct HomeView: View {
     @Binding var showMenu : Bool
     @State var selectedCategory : Category = Category.home
     
-    var interstitial:Interstitial = Interstitial()
+//    var interstitial:Interstitial = Interstitial()
     
     var body: some View {
         
@@ -174,9 +174,9 @@ struct HomeView: View {
             // prevent iPad split view
             .navigationViewStyle(StackNavigationViewStyle())
             .onAppear(){
-                if !UserDefaults.standard.bool(forKey: "remove_ads") {
-                    self.interstitial.showAd()
-                }
+//                if !UserDefaults.standard.bool(forKey: "remove_ads") {
+//                    self.interstitial.showAd()
+//                }
             }
             
             if mainViewModel.isLoading {

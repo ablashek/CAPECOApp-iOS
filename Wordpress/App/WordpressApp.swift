@@ -142,8 +142,6 @@ class AppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCenterDele
                 }
             }
         }
-        
-        
     }
 }
 
