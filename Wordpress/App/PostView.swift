@@ -19,11 +19,12 @@ struct NewsView: View {
         GeometryReader { geo in
             ScrollView(.vertical, showsIndicators: false, content: {
                 
+                
                 if new._embedded?.featuredmedia != nil {
                     KFImage(source: .network(URL(string: (new._embedded?.featuredmedia?.first?.source_url)!) ?? URL(string: EMPTY_IMAGE_URL)!))
                     .resizable()
                     .aspectRatio(contentMode: .fill)
-                    .frame(width: geo.size.width, height: geo.size.height / 3)
+                    .frame(width: geo.size.width, height: geo.size.height / 5)
                     .clipped()
                 }
                 
