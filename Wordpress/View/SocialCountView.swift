@@ -16,17 +16,17 @@ struct SocialCountView: View {
         return isLiked ? Color.red.opacity(0.6) : Color("customBlack")
     }
     var likeButtonText: String {
-        return isLiked ? "Liked" : "Like"
+        return isLiked ? "Favorito" : "Me Gusta"
     }
     var body: some View {
         HStack(spacing: 24){
             Button(action: {
                 self.showingDetail.toggle()
             }) {
-                HStack(spacing: 4) {
-                    Image(systemName: "message.fill").frame(width: 24, height: 24).foregroundColor(Color.blue.opacity(0.6))
-                    Text("\(comments.count) " + "Comments").font(.subheadline).foregroundColor(Color("customBlack"))
-                }
+//                HStack(spacing: 4) {
+//                    Image(systemName: "message.fill").frame(width: 24, height: 24).foregroundColor(Color.blue.opacity(0.6))
+//                    Text("\(comments.count) " + "Comments").font(.subheadline).foregroundColor(Color("customBlack"))
+//                }
             }
             .sheet(isPresented: $showingDetail) {
                 CommentsView(post: self.new)

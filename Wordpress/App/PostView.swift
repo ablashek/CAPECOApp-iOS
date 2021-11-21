@@ -18,6 +18,7 @@ struct NewsView: View {
         // use GeometryReader to get current frame
         GeometryReader { geo in
             ScrollView(.vertical, showsIndicators: false, content: {
+                
                 if new._embedded?.featuredmedia != nil {
                     KFImage(source: .network(URL(string: (new._embedded?.featuredmedia?.first?.source_url)!) ?? URL(string: EMPTY_IMAGE_URL)!))
                     .resizable()
@@ -38,7 +39,7 @@ struct NewsView: View {
                 })
                 .padding(24)
             })
-            .navigationBarTitle("News", displayMode: .inline)
+            .navigationBarTitle(new.title.rendered.decodingHTMLEntities(), displayMode: .inline)
             .navigationBarBackButtonHidden(true)
             // add custom back button and share button
             .navigationBarItems(leading: Button(action : {
