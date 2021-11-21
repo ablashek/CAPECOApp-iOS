@@ -72,34 +72,34 @@ struct HomeView: View {
                                     NewsHeadlineView(post: mainViewModel.headlinePosts.first ?? Post.default)
                                 }
                             }else{
-                                GeometryReader { geometry in
-                                    ScrollView(.horizontal, showsIndicators: false) {
-                                        HStack(spacing: 15) {
-                                            ForEach(mainViewModel.headlinePosts) { item in
-                                                NavigationLink(
-                                                    destination: NewsView(new: item),
-                                                    label: {
-                                                        KFImage(URL(string: (item._embedded?.featuredmedia?.first?.media_details?.sizes?.medium?.source_url ?? EMPTY_IMAGE_URL)) ?? URL(string: EMPTY_IMAGE_URL)!)
-                                                            .resizable()
-                                                            .scaledToFill()
-                                                            .frame(width: geometry.size.width - 50, height: 300)
-                                                            .cornerRadius(35)
-                                                            .overlay(
-                                                                VStack(alignment: .leading) {
-                                                                    Spacer()
-                                                                    TitleAndDateView(post: item)
-                                                                }
-                                                                .padding()
-                                                                .background(LinearGradient(gradient: Gradient(colors: [Color("ColorHeadline"), Color.clear]), startPoint: .bottom, endPoint: .top).cornerRadius(35))
-                                                            )
-                                                    })
-                                            }
-                                        }
-                                        .redacted(reason: mainViewModel.isHeadlineLoading ? .placeholder : []) 
-                                        .padding(.horizontal)
-                                    }
-                                }
-                                .frame(height: 310).listRowInsets(EdgeInsets())
+//                                GeometryReader { geometry in
+//                                    ScrollView(.horizontal, showsIndicators: false) {
+//                                        HStack(spacing: 15) {
+//                                            ForEach(mainViewModel.headlinePosts) { item in
+//                                                NavigationLink(
+//                                                    destination: NewsView(new: item),
+//                                                    label: {
+//                                                        KFImage(URL(string: (item._embedded?.featuredmedia?.first?.media_details?.sizes?.medium?.source_url ?? EMPTY_IMAGE_URL)) ?? URL(string: EMPTY_IMAGE_URL)!)
+//                                                            .resizable()
+//                                                            .scaledToFill()
+//                                                            .frame(width: geometry.size.width - 50, height: 300)
+//                                                            .cornerRadius(35)
+//                                                            .overlay(
+//                                                                VStack(alignment: .leading) {
+//                                                                    Spacer()
+//                                                                    TitleAndDateView(post: item)
+//                                                                }
+//                                                                .padding()
+//                                                                .background(LinearGradient(gradient: Gradient(colors: [Color("ColorHeadline"), Color.clear]), startPoint: .bottom, endPoint: .top).cornerRadius(35))
+//                                                            )
+//                                                    })
+//                                            }
+//                                        }
+//                                        .redacted(reason: mainViewModel.isHeadlineLoading ? .placeholder : [])
+//                                        .padding(.horizontal)
+//                                    }
+//                                }
+//                                .frame(height: 310).listRowInsets(EdgeInsets())
                             }
                         }
                     }

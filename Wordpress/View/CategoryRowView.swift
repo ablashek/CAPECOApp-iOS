@@ -16,7 +16,10 @@ struct CategoryRowView: View {
             HStack {
                 Text(category.name)
                     .fontWeight(.bold)
-                    .padding(10)
+                    .padding(.leading, 8)
+                    .padding(.trailing, 8)
+                    .padding(.bottom, 20)
+                    .padding(.top, 20)
                 
                 Spacer()
                 

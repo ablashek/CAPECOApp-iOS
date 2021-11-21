@@ -23,8 +23,8 @@ struct NavigationMenuView: View {
         HStack{
             
             VStack(alignment: .leading, spacing: 12) {
-                
-                Text("Pages")
+                Spacer().frame(maxWidth: .infinity)
+                Text("CAPECO")
                     .font(.title)
                     .fontWeight(.bold)
                     .foregroundColor(.white)
@@ -35,22 +35,15 @@ struct NavigationMenuView: View {
                     .background(Color.white)
                     .padding(.top, 10)
                 
-                
-                
-                
                 ForEach(pages) { item in
                     Button(action: {
                         
                         self.page = item
-                        
                         withAnimation{
-                            
                             self.show.toggle()
                             self.showPage.toggle()
                         }
-                        
                     }) {
-                        
                         Text(item.title.rendered.decodingHTMLEntities())
                         .foregroundColor(Color.white)
                         .padding(.vertical, 10)
@@ -59,12 +52,11 @@ struct NavigationMenuView: View {
                     }
                 }
                 
- 
-                
                 Spacer(minLength: 0)
             }
-            .padding(.top,25)
-            .padding(.horizontal,20)
+            .padding(.top, 25)
+            .padding(.horizontal, 20)
+            .frame(maxHeight: .infinity)
             
             Spacer(minLength: 0)
         }
@@ -73,9 +65,7 @@ struct NavigationMenuView: View {
         .onAppear(){
             loadData()
         }
-        
     }
-    
     
     func loadData() {
         guard let url = URL(string: URL_PAGES) else {
@@ -97,8 +87,6 @@ struct NavigationMenuView: View {
             
         }.resume()
     }
-    
-
 }
 
 struct NavigationMenuView_Previews: PreviewProvider {
