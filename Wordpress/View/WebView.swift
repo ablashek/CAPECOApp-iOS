@@ -53,7 +53,7 @@ struct WebView : UIViewRepresentable {
         webview.navigationDelegate = context.coordinator
         webview.scrollView.isScrollEnabled = false
         let htmlStart = "<html><head><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, shrink-to-fit=no\"></head><body>"
-        let htmStyle = "<style> body {background-color: transparent; font-family: \"San Francisco\", \"Helvetica Neue\", \"Lucida Grande\"; color: \(interface());  } p {background-color: transparent; text-align: justify;} img { width:100%; object-fit:cover; } iframe { width:100%; height:auto; object-fit:cover; } </style>"
+        let htmStyle = "<style> body {background-color: transparent; font-family: \"San Francisco\", \"Helvetica Neue\", \"Lucida Grande\"; color: \(interface());  } p {background-color: transparent; text-align: justify;} img { width:100%; height:auto; object-fit:cover; } iframe { width:100%; height:auto; object-fit:cover; } </style>"
         let htmlEnd = "</body></html>"
         let htmlString = "\(htmlStart)\(htmStyle)\(htmlContent)\(htmlEnd)"
         webview.loadHTMLString(htmlString, baseURL:  nil)

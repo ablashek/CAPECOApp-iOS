@@ -30,7 +30,7 @@ var IN_APP_PRODUCTS = [
 var IS_CATEGORIES_VISIBLE = false
 
 ///Headline Visibilty
-var IS_HEADLINE_VISIBLE = false
+var IS_HEADLINE_VISIBLE = true
 
 ///Headline Type
 var HEADLINE_TYPE = HeadlineEnum.multiple
