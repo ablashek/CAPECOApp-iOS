@@ -16,15 +16,15 @@ struct StartButtonView: View {
             isOnboarding = false
         }){
             HStack(spacing: 8) {
-                Text("Start")
+                Text("Iniciar")
                 Image(systemName: "arrow.right.circle")
                     .imageScale(.large)
             }
             .padding(.horizontal, 16)
             .padding(.vertical, 10 )
-            .background(Capsule().strokeBorder(Color.white, lineWidth: 1.25))
+            .background(Capsule().strokeBorder(Color("ColorAccent"), lineWidth: 1.25))
         } //: Button
-        .accentColor(.white)
+        .accentColor(Color("ColorAccent"))
     }
 }
 

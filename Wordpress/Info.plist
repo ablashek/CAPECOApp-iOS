@@ -183,9 +183,9 @@
 	<key>UILaunchScreen</key>
 	<dict>
 		<key>UIColorName</key>
-		<string>launch-screen-color</string>
+		<string></string>
 		<key>UIImageName</key>
-		<string>launch-screen-image</string>
+		<string></string>
 	</dict>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>

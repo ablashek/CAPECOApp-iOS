@@ -14,9 +14,9 @@ var HEADLINE_CATEGORY_ID = 17 // Your Categories -> www.YOUR_WORDPRESS_SITE/wp-j
 
 ///Onboard Data
 var ONBOARD_DATA: [Onboard] = [
-    Onboard(title: "Onboard 1", headline: "Headline", image: "logo", gradientColors: [Color("ColorBlue"), Color("ColorBlue")]),
-    Onboard(title: "Onboard 2", headline: "Headline", image: "logo", gradientColors: [Color("ColorGreen"), Color("ColorGreen")]),
-    Onboard(title: "Onboard 3", headline: "Headline", image: "logo", gradientColors: [Color("ColorRed"), Color("ColorRed")])
+    Onboard(title: "Información Técnica", headline: "Acceda a información acerca de Sistemas de Siembra Directa, Trigo, Perspectivas Climaticas, y otros.", image: "logo", gradientColors: [Color("ColorWhite"), Color("ColorWhite")]),
+    Onboard(title: "Estadísticas", headline: "Acceda a información y estadisticas de la exportación de granos.", image: "logo", gradientColors: [Color("ColorWhite"), Color("ColorWhite")]),
+    Onboard(title: "Capacitaciones", headline: "Manténganse actualizado sobre capacitaciones que ofrece la Cámara.", image: "logo", gradientColors: [Color("ColorWhite"), Color("ColorWhite")])
 ]
 
 ///In App Products. Note:  You must have extended license for in-app purchases. Contact me if you want upgrade.
