@@ -53,7 +53,7 @@ struct WordpressApp: App {
                     }
                     
                 }
-                .background(Color.accentColor)
+                .background(Color("ColorAccent"))
                 .edgesIgnoringSafeArea(.all)
                 .onAppear(){
                     mainViewModel.fetchHeadlineData()

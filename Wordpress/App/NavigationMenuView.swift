@@ -16,10 +16,6 @@ struct NavigationMenuView: View {
     
     var body: some View{
         
-        //        ZStack{
-        
-        // Menu...
-        
         HStack{
             
             VStack(alignment: .leading, spacing: 12) {

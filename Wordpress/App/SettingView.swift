@@ -34,37 +34,37 @@ struct SettingView: View {
                         }
                     }
                     
-                    GroupBox(label : SettingsLabelView(labelText: "Premium", labelImage: "suit.diamond")){
-//                        SimulatorStoreView()
-                        ForEach(storeManager.myProducts, id: \.self) { product in
-                            Divider().padding(.vertical, 4)
-                            HStack {
-                                VStack(alignment: .leading) {
-                                    Text(product.localizedTitle)
-                                        .font(.headline)
-                                    Text(product.localizedDescription)
-                                        .font(.caption2)
-                                }
-                                Spacer()
-                                if UserDefaults.standard.bool(forKey: product.productIdentifier) {
-                                    Text(LocalizedStringKey("Purchased"))
-                                        .foregroundColor(.green)
-                                } else {
-                                    Button(action: {
-                                        storeManager.purchaseProduct(product: product)
-                                    }) {
-                                        Text("Buy for \(product.price) $")
-                                    }
-                                    .foregroundColor(.blue)
-                                }
-                            }.padding(.vertical, 4)
-                        }
-                    }
+//                    GroupBox(label : SettingsLabelView(labelText: "Premium", labelImage: "suit.diamond")){
+////                        SimulatorStoreView()
+//                        ForEach(storeManager.myProducts, id: \.self) { product in
+//                            Divider().padding(.vertical, 4)
+//                            HStack {
+//                                VStack(alignment: .leading) {
+//                                    Text(product.localizedTitle)
+//                                        .font(.headline)
+//                                    Text(product.localizedDescription)
+//                                        .font(.caption2)
+//                                }
+//                                Spacer()
+//                                if UserDefaults.standard.bool(forKey: product.productIdentifier) {
+//                                    Text(LocalizedStringKey("Purchased"))
+//                                        .foregroundColor(.green)
+//                                } else {
+//                                    Button(action: {
+//                                        storeManager.purchaseProduct(product: product)
+//                                    }) {
+//                                        Text("Buy for \(product.price) $")
+//                                    }
+//                                    .foregroundColor(.blue)
+//                                }
+//                            }.padding(.vertical, 4)
+//                        }
+//                    }
                     
                     GroupBox(label : SettingsLabelView(labelText: "Customization", labelImage: "paintbrush")){
                         
                         Divider().padding(.vertical, 4)
-                        Text("If you wish, you can restart the application by toggle the switch in this box. That way it starts the onboarding process and you will see the welcome screen again.")
+                        Text("Si lo desea, puede reiniciar la aplicación moviendo el interruptor en este cuadro. De esa manera, comienza el proceso de incorporación y volverá a ver la pantalla de bienvenida.")
                             .padding(.vertical, 8)
                             .frame(minHeight: 60)
                             .layoutPriority(1)
